@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+  "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <!-- property name="connection.driver_class">com.mysql.jdbc.Driver</property -->
+    <property name="connection.url">jdbc:mysql://localhost:3306/dbase</property>
+    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">shubham@5197</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">create</property>
+    
+    <!--  <mapping class="com.embedded.Employee" />
+         <mapping class="com.embedded.Department" />
+         <mapping class="com.mapping.Person" />
+         <mapping class="com.mapping.IdentityCard" />
+         <mapping class="com.mapping.Collage" />
+         <mapping class="com.mapping.Depatment" />
+         <mapping class="com.mapping.Country" />
+         <mapping class="com.mapping.State" />
+          <mapping class="com.mapping.Teacher" />
+          <mapping class="com.mapping.Student_S" />
+                    <mapping class="com.practice.Emp" />
+                    <mapping class="com.practice.Dept" />-->
+          <mapping class="com.inheritance.Teacher" />
+          <mapping class="com.inheritance.PermanentTeacher" />
+          <mapping class="com.inheritance.VistingTeacher" />
+                
+                    
+          
+         
+         
+              
+       
+   
+  </session-factory>
+</hibernate-configuration>
